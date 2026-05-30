@@ -10,7 +10,7 @@ const Navbar = () => {
         <header id="header">
             <nav id="navbar">
                 <div className="name">
-                <img src= "./clover.png" alt="clover"/>
+                <img src= "./logo.png" alt="clover"/>
                 <h1><a href ="#header">Miranda Shoraji</a></h1>
                 {/* dark mode to add later feature */}
                     {/* <button onClick={() => setDarkMode(!darkMode)}>

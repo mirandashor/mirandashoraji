@@ -4,6 +4,31 @@
 
 .main {
     background: var(--color-box-gradient1);
+    border: 3px solid var(--color-text-accent);
+
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me img {
+    width: 60%;
+    height: auto;
+}
+
+.paragraph p {
+    max-width: 600px;
+    margin: 10px;
 }
 
 .cards {
@@ -11,16 +36,31 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 
-    display: inline-flex;
+    max-width: 1200px;
+    margin: 30px auto;
     align-items: center;
 }
 
 .cards p {
-    background: var(--color-box-static);
-    border: 3px solid var(--color-text-accent);
-    border-radius: 65px, 11px;
-
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    min-height: 100px;
 
-    padding: 10px;
+    margin: 0;
+    padding: 20px;
+}
+
+.cards > div:nth-child(1),
+.cards > div:nth-child(2) {
+    border: 3px solid var(--color-text-accent);
+    border-radius: 11px 65px;
+}
+
+.cards > div:nth-child(3),
+.cards > div:nth-child(4) {
+    border: 3px solid var(--color-text-accent);
+    border-radius: 65px 11px;
+    background: var(--color-box-static);
 }
