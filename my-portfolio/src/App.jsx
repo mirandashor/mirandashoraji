@@ -1,4 +1,6 @@
 import Navbar from "./layout/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
 // import Footer from "./layout/Footer";
 
 // add components to connect the sections to the app
@@ -7,6 +9,8 @@ function App() {
         <>
         <Navbar />
         <main>
+            <Hero />
+            <About />
 
         </main>
         {/* <Footer /> */}

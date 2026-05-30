@@ -1,0 +1,26 @@
+#About {
+    margin-bottom: 60px;
+}
+
+.main {
+    background: var(--color-box-gradient1);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+.cards p {
+    background: var(--color-box-static);
+    border: 3px solid var(--color-text-accent);
+    border-radius: 65px, 11px;
+
+    align-items: center;
+
+    padding: 10px;
+}

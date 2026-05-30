@@ -1,5 +1,5 @@
 /* import for specific fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Young+Serif&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lemon&family=Young+Serif&display=swap'); 
 
 /* set variables for specific colors/fonts/etc to use anywhere */
 :root {
@@ -19,7 +19,7 @@
   --shadow-box: 1px 2px 3px rgba(0, 0, 0, 0.2);
 
   --font-default: 'Young-Serif', Sans-Serif, system-ui;
-  --font-accent: 'Lemon',  
+  --font-accent: 'Lemon'; 
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +33,7 @@
 
 body {
   background: var(--color-background);
+  font-family: 'Young Serif';
 }
 
 
