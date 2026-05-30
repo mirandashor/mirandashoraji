@@ -1,11 +1,15 @@
 import Navbar from "./layout/Navbar";
+// import Footer from "./layout/Footer";
 
 // add components to connect the sections to the app
 function App() {
     return (
         <>
         <Navbar />
+        <main>
 
+        </main>
+        {/* <Footer /> */}
         </>
     );
 }
