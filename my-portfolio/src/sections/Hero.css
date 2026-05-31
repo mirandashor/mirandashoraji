@@ -47,15 +47,11 @@ h2 {
     box-shadow: 0 3px 7px rgba(51, 3, 37, 0.425);
     border-radius: 16px;
     margin: 10px;
-    padding: 8px 14px;
-    font-size: 1.2rem;
+    padding: 10px 18px;
+    font-size: 1.1rem;
+    font-family: 'Young Serif';
 
     transition: all 0.2s ease;
-}
-
-.heroButtons button:hover {
-    cursor: pointer;
-    transform: translateY(-1.5px) scale(1);
 }
 
 .heroButtons > button:nth-child(1) {
@@ -66,6 +62,18 @@ h2 {
 .heroButtons > button:nth-child(2) {
     background: var(--color-hero-gradient2);
     border-radius: 30px 5px;
+}
+
+.heroButtons > button:nth-child(1):hover {
+    cursor: pointer;
+    transform: translateY(-1.4px) scale(1.006);
+    box-shadow: -2px 3px 8px rgba(36, 3, 26, 0.637);
+}
+
+.heroButtons > button:nth-child(2):hover {
+    cursor: pointer;
+    transform: translateY(-1.4px) scale(1.006);
+    box-shadow: 2px 3px 8px rgba(36, 3, 26, 0.637);
 }
 
 /* .heroButtons > button:nth-child(1):hover {

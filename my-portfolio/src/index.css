@@ -6,8 +6,8 @@
   --color-background: #F5F1EB;
   --color-nav-gradient: linear-gradient(to right, #812E5B, #EA907A, #812E5B);
   --color-box-beige: #F4EBDD; 
-  --color-box-gradient1: linear-gradient(to bottom right, #E8F9E8, #EFE7E5);
-  --color-box-gradient2: linear-gradient(to bottom right, #EFE7E5, #E8F9E8);
+  --color-box-gradient1: linear-gradient(to bottom right, #E8F9E8, rgb(233, 206, 211));
+  --color-box-gradient2: linear-gradient(to top right, rgb(233, 206, 211), #E8F9E8);
   --color-text-accent: #622245;
   --color-shadow-accent: #BAE8C4;
   --color-border: #812E5B;
