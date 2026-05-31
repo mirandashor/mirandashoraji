@@ -14,12 +14,12 @@ const About = () => {
                     <p>
                         I aim for building projects that combine creativity with problem solving, and I’m 
                         always looking for opportunities to learn new technologies and improve my 
-                        development skills with new projects.
+                        development skills with new projects.💡
                     </p>
                 </div>
                 <div className="me">
-                    <h2>About Me</h2>
-                    <img src="./logo.png" alt="picture"></img>
+                    <h2>About Me ☘︎</h2>
+                    <img src="./pfp.png" alt="picture"></img>
                 </div>
             </div>
 

@@ -33,14 +33,15 @@
     padding-right: 5px;
 }
 
-.name a {
+.name h1 {
     text-decoration: none;
     color: var(--color-box-beige);
     text-shadow: 2px 4px 4px var(--color-text-accent);
 }
 
-.name a:hover {
+.name h1:hover {
     text-shadow: 2px 4px 4px rgb(31, 109, 31);
+    cursor: pointer;
 }
 
 .navElements {

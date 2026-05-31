@@ -18,8 +18,10 @@ const Hero = () => {
                 user-focused applications
             </h2>
 
-            <button>View Projects</button>
-            <button>Contact Me</button>
+            <div className="heroButtons">
+                <button>View Projects 🖳</button>
+                <button>✉ Contact Me</button>
+            </div>
 
         </section>
     );
