@@ -2,6 +2,7 @@ import Navbar from "./layout/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
+import Projects from "./sections/Projects"
 // import Footer from "./layout/Footer";
 
 // add components to connect the sections to the app
@@ -11,8 +12,12 @@ function App() {
         <Navbar />
         <main>
             <Hero />
+            <div className="divider">
+                <img src="../flowerPattern.png" alt="divider"></img>
+            </div>
             <About />
             <Skills />
+            <Projects />
 
         </main>
         {/* <Footer /> */}

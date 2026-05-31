@@ -1,7 +1,12 @@
+.divider {
+  width: 100vw;
+  height: 120px;
 
-
-
-
+  background-image: url("/your-image.png");
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-size: auto 100%;
+}
 
 
 

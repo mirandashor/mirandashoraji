@@ -10,6 +10,8 @@
     margin: 270px auto;
     padding: 50px;
 
+    box-shadow: 1px 1px 20px rgba(51, 3, 37, 0.507);
+
     gap: 12px;
 }
 
