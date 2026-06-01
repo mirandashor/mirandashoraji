@@ -1,5 +1,5 @@
 # Hi! I'm Miranda Shoraji
-### welcome to my [portfolio website](URL)!
+## Welcome to my [portfolio website](URL)!
 
 I am a software developer exploring full-stack development. My goal is to turn ideas into reliable, user-focused applications. 🌍
 
@@ -11,5 +11,7 @@ You can view a detailed showcase of my projects 💻 through my GitHub Pages por
 ## 💬 Ways to reach me!
 -   **Email:** [mirandashoraji@gmail.com](mailto:mirandashoraji@gmail.com)
 -   **LinkedIn:** [https://www.linkedin.com/in/mirandashoraji/](https://www.linkedin.com/in/mirandashoraji/)
+
+
 I'm always open to discussing new projects, creative ideas, or opportunities.
 
