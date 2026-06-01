@@ -1,0 +1,102 @@
+#Contact {
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+.contactSection h2 {
+    text-align: center;
+    color: var(--color-text-accent);
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: 'Lemon';
+}
+
+.contactBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 20px;
+
+    flex-wrap: wrap;
+}
+
+.contactBoxes img {
+    width: 30px;
+    height: auto;
+}
+
+.contactType1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 300px;
+    
+    padding: 50px 80px;
+
+    background: var(--color-box-gradient2);
+    border: 1px solid var(--color-text-accent);
+    border-radius: 5px 30px;
+}
+
+.contactType2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 300px;
+    
+    padding: 50px 80px;
+
+    background: var(--color-box-gradient1);
+    border: 1px solid var(--color-text-accent);
+    border-radius: 30px 5px;
+}
+
+.emailName,
+.linkedInName {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    color: var(--color-text-accent);
+    font-size: 20px;
+
+    padding-bottom: 34px;
+}
+
+.contactType img, 
+.contactType span {
+    display: flex;
+    align-items: center;
+}
+
+.linkButton {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    gap: 10px;
+
+    background: var(--color-box-beige);
+    border: 1px solid var(--color-text-accent);
+    padding: 12px;
+    border-radius: 11px;
+
+    transition: all 0.2s ease;
+}
+
+.linkButton:hover {
+    transform: translateY(-1.5px);
+}
+
+.linkButton button {
+    all: unset;
+    cursor: grab;
+
+}
+
+.linkButton img {
+    width: 20px;
+    height: auto;
+}

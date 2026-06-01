@@ -42,7 +42,7 @@ h2 {
 
 .heroButtons .button {
     display: inline-block;
-    border: 1.5px solid var(--color-text-accent);
+    border: 2px solid var(--color-text-accent);
     box-shadow: 0 3px 7px rgba(51, 3, 37, 0.425);
     border-radius: 16px;
 
@@ -69,14 +69,14 @@ h2 {
 
 .heroButtons > .button:nth-child(1):hover {
     cursor: pointer;
-    transform: translateY(-1.4px) scale(1.006);
-    box-shadow: -2px 3px 8px rgba(36, 3, 26, 0.637);
+    transform: translateY(-1.4px) scale(1.01);
+    box-shadow: -2px 3px 8px rgba(145, 61, 117, 0.637);
 }
 
 .heroButtons > .button:nth-child(2):hover {
     cursor: pointer;
     transform: translateY(-1.4px) scale(1.006);
-    box-shadow: 2px 3px 8px rgba(36, 3, 26, 0.637);
+    box-shadow: 2px 3px 8px rgba(184, 101, 80, 0.637);
 }
 
 /* .waveup,

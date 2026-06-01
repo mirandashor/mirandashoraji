@@ -56,6 +56,14 @@ const Skills = () => {
                     <span>REST APIs</span>
                 </div>
                 <div className="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                    <span>Figma</span>
+                </div>
+                <div className="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                    <span>Canva</span>
+                </div>
+                <div className="skill">
                     <img src="./n8nLogo.png" alt="n8n"/>
                     <span>n8n</span>
                 </div>
