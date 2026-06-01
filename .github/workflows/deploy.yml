@@ -31,13 +31,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-
+          
       # install dependencies (npm)
       - name: Install Dependencies
+        working-directory: my-portfolio
         run: npm install
-
+        
       #build
       - name: Build Project
+        working-directory: my-portfolio
         run: npm run build
 
       #deploy 
