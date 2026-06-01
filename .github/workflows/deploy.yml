@@ -23,21 +23,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      -name: Checkout repo
+      - name: Checkout repo
       - uses: actions/checkout@v4
 
       # setup node
-      -name: Setup Node
+      - name: Setup Node
       uses: actions/setup-node@v4
       with:
         node-ersion: 18
 
       # install dependencies (npm)
-      -name: Install Dependencies
+      - name: Install Dependencies
       run: npm install
 
       #build
-      -name: Build Project
+      - name: Build Project
       run: npm run build
 
       #deploy 
