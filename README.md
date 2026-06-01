@@ -1,5 +1,5 @@
 # Hi! I'm Miranda Shoraji
-## Welcome to my [portfolio website](URL)!
+## Welcome to my [portfolio website](https://github.com/mirandashor/mirandashoraji.git/)!
 
 I am a software developer exploring full-stack development. My goal is to turn ideas into reliable, user-focused applications. 🌍
 
