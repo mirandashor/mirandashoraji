@@ -37,14 +37,12 @@ jobs:
         working-directory: my-portfolio
         run: npm install
         
-      #build
       - name: Build Project
         working-directory: my-portfolio
         run: npm run build
-
-      #deploy 
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: my-portfolio/dist
