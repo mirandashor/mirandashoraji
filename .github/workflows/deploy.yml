@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node
       uses: actions/setup-node@v4
       with:
-        node-ersion: 18
+        node-version: 18
 
       # install dependencies (npm)
       - name: Install Dependencies
