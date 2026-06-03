@@ -14,7 +14,9 @@
   --color-box-static: #ECEFEC;
   --color-box-gradient3: linear-gradient(top to bottom, #FFFFFF, #ECEFEC, #FFFFFF);
   --color-hero-gradient1: linear-gradient(110deg, #BAE8C4, #D5E7D4, #EFE7E5);
+  --color-hero-gradient1-hover: linear-gradient(110deg, #d3ecd8da, #e6f0e5d0, #fcf3f1c5);
   --color-hero-gradient2: linear-gradient(50deg, #EFE7E5, #D5E7D4, #BAE8C4);
+    --color-hero-gradient2-hover: linear-gradient(110deg, #fcf3f1c5, #e6f0e5d0, #d3ecd8da);
   --color-accent-button: #FBBFB0;
   --color-accent-border: #812E5B;
 

@@ -1,12 +1,14 @@
-// import React from 'react';
-// import './Footer.css';
+import React from 'react';
+import './Footer.css';
 
-// const Footer = () => {
-//     return (
-//         <footer>
-//             <p>© 2026 Miranda Shoraji</p>
-//         </footer>
-//     );
-// }
+const Footer = () => {
+    return (
+        <section className="footer">
+            <footer>
+                <p>©2026 Miranda Shoraji</p>
+            </footer>
+        </section>
+    );
+}
 
-// export default Footer;
+export default Footer;

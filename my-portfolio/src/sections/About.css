@@ -87,7 +87,7 @@
 .cards > div:nth-child(1):hover,
 .cards > div:nth-child(2):hover {
     transform: translateY(-1.5px) scale(1.001);
-    box-shadow: -2px 3px 8px rgba(145, 61, 117, 0.637);
+    box-shadow: 2px 3px 8px rgba(184, 101, 80, 0.637);
 }
 
 

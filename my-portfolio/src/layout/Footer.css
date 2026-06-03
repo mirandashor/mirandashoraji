@@ -1,0 +1,7 @@
+.footer {
+    background: linear-gradient(to right, #812e5c9e, #ea907a78, #812e5c9c);
+    color: var(--color-box-beige);
+        text-shadow: 2px 2px 4px var(--color-text-accent);
+    margin: 0 auto;
+    padding: 10px 30px;
+}

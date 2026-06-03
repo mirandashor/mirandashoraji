@@ -7,7 +7,7 @@ import Contact from "./sections/Contact";
 import Icon from "./components/Icon";
 import flowerPattern from "./assets/flowerPattern.png";
 import "./App.css";
-// import Footer from "./layout/Footer";
+import Footer from "./layout/Footer";
 
 // add components to connect the sections to the app
 function App() {
@@ -26,7 +26,7 @@ function App() {
             <Contact />
 
         </main>
-        {/* <Footer /> */}
+        <Footer />
         </>
     );
 }

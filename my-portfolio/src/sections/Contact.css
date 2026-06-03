@@ -90,8 +90,8 @@
 
 .linkButton:hover {
     transform: translateY(-1.5px);
-    background: beige;
-        box-shadow: 0 3px 6px rgba(184, 101, 80, 0.637);
+    background: rgba(240, 240, 221, 0.8);
+    box-shadow: 0 3px 6px rgba(184, 101, 80, 0.637);
 }
 
 .linkButton button {
