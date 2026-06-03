@@ -20,7 +20,7 @@ const Hero = () => {
                 </h2>
 
                 <div className="heroButtons">
-                    <a href="#Projects" className="button">View Projects 🖳</a>
+                    <a href="#Projects" className="button">View Projects ✩</a>
                     <a href="#Contact" className="button">✉ Contact Me</a>
                 </div>
             </div> 

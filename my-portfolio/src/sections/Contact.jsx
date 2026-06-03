@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import Icon from "./Icon.jsx";
+import Icon from "../components/Icon.jsx";
 import externalLink from "../assets/externalLink.png";
 import gmailLogo from "../assets/gmailLogo.png";
 import linkedInLogo from "../assets/linkedInLogo.png";
@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <section id="Contact">
             <div className="contactSection">
-                <h2>Contact Me!☺</h2>
+                <h2>Contact Me! ☎︎</h2>
 
                 <div className="contactBoxes">
 
