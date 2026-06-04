@@ -1,0 +1,79 @@
+#Projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Projects h2 {
+    font-family: 'lemon';
+    color: var(--color-text-accent);
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1400px;
+}
+
+.projectCards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1400px;
+}
+
+.mixlist,
+.cinematch {
+    display: flex;
+    background-color: #ECEFEC; 
+    padding: 30px;
+    gap: 20px;
+    border-radius: 11px;
+    box-shadow: 0 1px 6px rgba(184, 101, 80, 0.637);
+
+}
+
+.projectName {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text-accent);
+    font-size: 20px;
+}
+
+.MT {
+    text-shadow: 1px 1px 3px rgba(178, 120, 216, 0.753);
+}
+
+.CM {
+    text-shadow: 1px 1px 3px rgba(120, 178, 216, 0.753);
+}
+
+.projectName img {
+    border-radius: 11px;
+
+    width: 130px;
+    object-fit: contain;
+}
+
+.desc {
+    line-height: 1.5;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.tech {
+    background-color: var(--color-box-beige);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 11px;
+    box-shadow: 0 1px 3px rgba(145, 61, 117, 0.637);
+}

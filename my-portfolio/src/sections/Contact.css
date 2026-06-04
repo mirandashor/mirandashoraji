@@ -1,13 +1,13 @@
 #Contact {
     max-width: 1150px;
-    margin: 50px auto;
+    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
 }
 
 .contactSection h2 {
     text-align: center;
     color: var(--color-text-accent);
     text-decoration: underline;
-    margin-bottom: 20px;
     font-family: 'Lemon';
 }
 
@@ -90,7 +90,7 @@
 
 .linkButton:hover {
     transform: translateY(-1.5px);
-    background: rgba(240, 240, 221, 0.8);
+    background: rgba(255, 255, 214, 0.698);
     box-shadow: 0 3px 6px rgba(184, 101, 80, 0.637);
 }
 

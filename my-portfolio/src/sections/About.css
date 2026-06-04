@@ -32,6 +32,7 @@
     width: 60%;
     height: auto;
     margin-bottom: 10px;
+    box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);
 }
 
 .paragraph p {
@@ -66,7 +67,7 @@
 
 .cards > div:nth-child(1),
 .cards > div:nth-child(2) {
-    border: 1.5px solid var(--color-text-accent);
+    border: 1px solid var(--color-text-accent);
     border-radius: 11px 65px;
     background: var(--color-box-static);
     box-shadow: 0 3px 7px rgba(51, 3, 37, 0.507);

@@ -20,9 +20,9 @@ function App() {
             <About />
             <div className="divider" />
             <Skills />
-            {/* <div className="divider" /> */}
+            <div className="divider" />
             <Projects />
-            {/* <div className="divider" /> */}
+            <div className="divider" />
             <Contact />
 
         </main>
