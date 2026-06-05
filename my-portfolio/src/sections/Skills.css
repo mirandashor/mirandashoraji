@@ -47,7 +47,6 @@
     align-items: center;
     gap: 8px;
 
-    width: fit-content;
     white-space: nowrap;
     background: var(--color-box-beige);
     border: 1px solid var(--color-text-accent);
@@ -67,7 +66,28 @@
 .skill img {
     width: 50px;
     height: auto;
-    flex-shrink: 0;
+}
+
+@media (max-width: 836px) {
+    .skillsSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skillsLeft p {
+      font-size: 17px;
+    }
+
+    .skill {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .skill img {
+        width: 30px;
+        height: auto;
+    }
+
 }
 
 

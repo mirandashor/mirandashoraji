@@ -1,26 +1,46 @@
 import React from 'react';
 import './Projects.css';
+import { useState } from 'react';
+
+import CineMatchLogo from "../assets/CineMatchLogo.png";
+import mixlistLogo from "../assets/mixlistLogo.png";
 
 const Projects = () => {
+    const[mixlistIndex, setMixlistIndex] = useState(0);
+    const img = (path) => `${import.meta.env.BASE_URL}${path}`;
+    const mixlistImages = [
+        img("/mixlist/mixlist1.png"),
+        img("/mixlist/mixlist2.png"),
+        img("/mixlist/mixlist3.png"),
+        img("/mixlist/mixlist4.png"),
+        img("/mixlist/mixlist5.png"),
+        img("/mixlist/mixlist6.png"),
+        img("/mixlist/mixlist7.png"),
+        img("/mixlist/mixlist8.png"),
+    ];
+
     return (
         <section id="Projects">
             <div>
-                <h2>Projects 🖳 💻 ☀</h2>
+                <h2>Projects 🖳</h2>
             </div>
 
             <div className="allProjects">
 
                 <div className="projectCards">
+                    {/* mixlist section */}
                     <div className="projectItem">
                         <div className="projectName">
                             <img src="./mixlistLogo.png"></img>
                             <span className="MT">Collaborative Playlist Generator</span>
                         </div>   
-
+                        {/* carousel section */}
                         <div className="mixlist">
                             <div className="carousel">
-                                <span>Placegolder</span>
+                                <img src={mixlistImages[mixlistIndex]}></img>
                             </div>
+
+                        {/* description section */}
                             <div className="desc">
                                 <p>Built a  collaborative web application that allows multiple users to create shared playlists based on their combined music preferences. <br></br>
                                     Designed session-based rooms that aggregate user listening data upon playlist creation to generate personalized playlists tailored by genre filtering and recommendation options. <br></br>
@@ -46,12 +66,13 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-
+                {/* cinematch section */}
                     <div className="projectItem">
                         <div className="projectName">
                             <img src="./CineMatchLogo.png"></img>
                             <span className="CM">Movie Recommendation Generator</span>
                         </div>
+
                         <div className="cinematch">
                             <p>placeholder</p>
                         </div>

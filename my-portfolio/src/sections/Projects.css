@@ -76,4 +76,27 @@
     display: inline-block;
     border-radius: 11px;
     box-shadow: 0 1px 3px rgba(145, 61, 117, 0.637);
+    font-size: 13px;
+}
+
+.carousel img{
+    display: flex;
+    width: 90%;
+    height: auto;
+    align-items: center;
+}
+
+@media (max-width: 836px) {
+.mixlist,
+.cinematch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECEFEC; 
+    padding: 30px;
+    gap: 20px;
+    border-radius: 11px;
+    box-shadow: 0 1px 6px rgba(184, 101, 80, 0.637);
+
+}
 }
