@@ -15,14 +15,14 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .projectCards {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .mixlist,
@@ -30,7 +30,6 @@
     display: flex;
     background-color: #ECEFEC; 
     padding: 30px;
-    gap: 20px;
     border-radius: 11px;
     box-shadow: 0 1px 6px rgba(184, 101, 80, 0.637);
 
@@ -61,6 +60,8 @@
 
 .desc {
     line-height: 1.5;
+    /* no smaller than 0.9 rem, prefer 2% of viewport width, no larger than 1.2 rem */
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
 }
 
 .techStack {
@@ -79,11 +80,16 @@
     font-size: 13px;
 }
 
-.carousel img{
+.carousel {
     display: flex;
+    align-items: center;
+    min-width: 250px;
+    height: auto;
+}
+
+.carousel img{
     width: 90%;
     height: auto;
-    align-items: center;
 }
 
 @media (max-width: 836px) {

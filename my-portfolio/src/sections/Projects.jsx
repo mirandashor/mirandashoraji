@@ -7,6 +7,7 @@ import mixlistLogo from "../assets/mixlistLogo.png";
 
 const Projects = () => {
     const[mixlistIndex, setMixlistIndex] = useState(0);
+    // because of GitHub Actions, root (baseURL) is now 'mirandashoraji' and not 'root'
     const img = (path) => `${import.meta.env.BASE_URL}${path}`;
     const mixlistImages = [
         img("/mixlist/mixlist1.png"),
@@ -18,6 +19,14 @@ const Projects = () => {
         img("/mixlist/mixlist7.png"),
         img("/mixlist/mixlist8.png"),
     ];
+
+    const nextImage = () => {
+        //update the image being shown (index number) + 1 to show next imaage
+        setMixlistIndex(mixlistIndex +1);
+    }
+    const prevImage = () => {
+        setMixlistIndex(mixlistIndex - 1);
+    }
 
     return (
         <section id="Projects">
@@ -31,20 +40,25 @@ const Projects = () => {
                     {/* mixlist section */}
                     <div className="projectItem">
                         <div className="projectName">
-                            <img src="./mixlistLogo.png"></img>
+                            <img src={mixlistLogo}></img>
                             <span className="MT">Collaborative Playlist Generator</span>
                         </div>   
                         {/* carousel section */}
                         <div className="mixlist">
                             <div className="carousel">
+                                <button onClick={prevImage}>back</button>
+                                {/* display first image in the array index */}
                                 <img src={mixlistImages[mixlistIndex]}></img>
+                                {/* set button to execute the nextImage function on click */}
+                                <button onClick={nextImage}>front</button>
                             </div>
 
                         {/* description section */}
                             <div className="desc">
-                                <p>Built a  collaborative web application that allows multiple users to create shared playlists based on their combined music preferences. <br></br>
+                                <p>A collaborative web application that allows multiple users to create shared playlists based on their combined music preferences. <br></br>
                                     Designed session-based rooms that aggregate user listening data upon playlist creation to generate personalized playlists tailored by genre filtering and recommendation options. <br></br>
                                     Integrated a built-in music player that allows users to listen and save generated playlists directly to Spotify. <br></br>
+                                    Split display between guest and host to give certain view and option permissions. <br></br>
                                     Planned and tracked development using Trello and a Gantt chart to manage milestones and deadlines.
                                 </p>
                             
@@ -69,7 +83,7 @@ const Projects = () => {
                 {/* cinematch section */}
                     <div className="projectItem">
                         <div className="projectName">
-                            <img src="./CineMatchLogo.png"></img>
+                            <img src={CineMatchLogo}></img>
                             <span className="CM">Movie Recommendation Generator</span>
                         </div>
 
