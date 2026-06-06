@@ -21,12 +21,35 @@ const Projects = () => {
     ];
 
     const nextImage = () => {
-        //update the image being shown (index number) + 1 to show next imaage
-        setMixlistIndex(mixlistIndex +1);
+        //update the image being shown to show next imaage (+1)
+        if (mixlistIndex < mixlistImages.length - 1) {
+            setMixlistIndex(mixlistIndex + 1)
+        }
+        else {
+            setMixlistIndex(0);
+        }
     }
+    //prev button wraps if at 0 index or goes back one if not
     const prevImage = () => {
-        setMixlistIndex(mixlistIndex - 1);
+        if (mixlistIndex === 0) {
+            setMixlistIndex(mixlistImages.length - 1);
+        }
+        else {
+            setMixlistIndex(mixlistIndex - 1);
+        }
     }
+
+    const carouselDots = () => {
+        return mixlistImages.map((_, i) =>{
+                return (
+                    <button onClick={() => setMixlistIndex(i)}>
+                        •
+                    </button>
+                );
+            });
+    };
+
+
 
     return (
         <section id="Projects">
@@ -51,6 +74,10 @@ const Projects = () => {
                                 <img src={mixlistImages[mixlistIndex]}></img>
                                 {/* set button to execute the nextImage function on click */}
                                 <button onClick={nextImage}>front</button>
+
+                                <div className="carouselDots">
+                                    {carouselDots()}
+                                </div>
                             </div>
 
                         {/* description section */}
