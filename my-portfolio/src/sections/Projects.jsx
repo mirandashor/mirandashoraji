@@ -42,7 +42,8 @@ const Projects = () => {
     const carouselDots = () => {
         return mixlistImages.map((_, i) =>{
                 return (
-                    <button onClick={() => setMixlistIndex(i)}>
+                    <button className={i === mixlistIndex ? "dotActive" : "dot"} 
+                    onClick={() => setMixlistIndex(i)}>
                         
                     </button>
                 );
@@ -67,16 +68,16 @@ const Projects = () => {
                             <span className="MT">Collaborative Playlist Generator</span>
                         </div>   
                         {/* carousel section */}
-                        <div className="mixlist">
+                        <div className="mixlistBox">
 
                             <div className="carousel">
                                 <div className="carouselViewport">
                                     <div className="carouselMain">
-                                    <button className="backBtn" onClick={prevImage}>back</button>
+                                    <button className="backBtn" onClick={prevImage}>❮</button>
                                     {/* display first image in the array index */}
                                     <img src={mixlistImages[mixlistIndex]}></img>
                                     {/* set button to execute the nextImage function on click */}
-                                    <button className="nextBtn" onClick={nextImage}>front</button>
+                                    <button className="nextBtn" onClick={nextImage}>❯</button>
                                     </div>
                                     <div className="carouselDots">
                                         {carouselDots()}
@@ -86,11 +87,10 @@ const Projects = () => {
 
                         {/* description section */}
                             <div className="desc">
-                                <p>A collaborative web application that allows multiple users to create shared playlists based on their combined music preferences. <br></br>
-                                    Designed session-based rooms that aggregate user listening data upon playlist creation to generate personalized playlists tailored by genre filtering and recommendation options. <br></br>
-                                    Integrated a built-in music player that allows users to listen and save generated playlists directly to Spotify. <br></br>
-                                    Split display between guest and host to give certain view and option permissions. <br></br>
-                                    Planned and tracked development using Trello and a Gantt chart to manage milestones and deadlines.
+                                <p>A collaborative web application that allows multiple users to create shared playlists based on their combined music preferences. 
+                                    It uses session-based rooms to aggregate user listening data and generate personal playlists with genre filtering and recommendation options. 
+                                    A built-in music player allows users to listen and save generated playlists directly to Spotify.
+                                    It also visually differentiates between guest and host roles to control view and feature permissions.
                                 </p>
                             
                                 <div className="techStack">
@@ -117,8 +117,8 @@ const Projects = () => {
                             <img src={CineMatchLogo}></img>
                             <span className="CM">Movie Recommendation Generator</span>
                         </div>
-
-                        <div className="cinematch">
+                        {/* CineMatch project box */}
+                        <div className="cinematchBox">
                             <p>placeholder</p>
                         </div>
                     </div>

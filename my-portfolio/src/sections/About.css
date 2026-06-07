@@ -8,12 +8,12 @@
     border: 3px solid var(--color-text-accent);
     border-radius: 11px;
 
-    max-width: 1150px;
+    max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
-    padding: 30px 30px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 20px rgba(51, 3, 37, 0.507);
 }
@@ -24,6 +24,7 @@
     align-items: center;
     text-decoration: underline;
     font-family: 'Lemon';
+    padding: 10px;
 
     color: var(--color-text-accent);
 }
@@ -37,10 +38,11 @@
 
 .paragraph p {
     max-width: 600px;
-    margin: 10px;
 
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     line-height: 1.5;
+    padding: 10px;
+    margin-left: 20px;
 }
 
 .cards {
@@ -49,6 +51,7 @@
     gap: 10px;
 
     max-width: 1200px;
+    width: 95%;
     margin: 42px auto;
 }
 
