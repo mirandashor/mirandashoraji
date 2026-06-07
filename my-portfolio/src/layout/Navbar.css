@@ -76,7 +76,7 @@
     transform: translateY(-1.5px) scale(1.01);
 }
 /* 768 */
-@media (max-width: 836px) {
+@media (max-width: 842px) {
     #navbar {
         flex-direction: column;
         align-items: center;

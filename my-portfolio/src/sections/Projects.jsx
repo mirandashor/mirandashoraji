@@ -43,7 +43,7 @@ const Projects = () => {
         return mixlistImages.map((_, i) =>{
                 return (
                     <button onClick={() => setMixlistIndex(i)}>
-                        •
+                        
                     </button>
                 );
             });
@@ -68,15 +68,19 @@ const Projects = () => {
                         </div>   
                         {/* carousel section */}
                         <div className="mixlist">
-                            <div className="carousel">
-                                <button onClick={prevImage}>back</button>
-                                {/* display first image in the array index */}
-                                <img src={mixlistImages[mixlistIndex]}></img>
-                                {/* set button to execute the nextImage function on click */}
-                                <button onClick={nextImage}>front</button>
 
-                                <div className="carouselDots">
-                                    {carouselDots()}
+                            <div className="carousel">
+                                <div className="carouselViewport">
+                                    <div className="carouselMain">
+                                    <button className="backBtn" onClick={prevImage}>back</button>
+                                    {/* display first image in the array index */}
+                                    <img src={mixlistImages[mixlistIndex]}></img>
+                                    {/* set button to execute the nextImage function on click */}
+                                    <button className="nextBtn" onClick={nextImage}>front</button>
+                                    </div>
+                                    <div className="carouselDots">
+                                        {carouselDots()}
+                                    </div>
                                 </div>
                             </div>
 
