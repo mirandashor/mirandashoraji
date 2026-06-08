@@ -30,7 +30,10 @@
 }
 
 .mixlistBox,
-.cinematchBox {
+.cinematchBox,
+.portfolioBox,
+.kitchenBox,
+.codemodeBox {
     display: flex;
     background-color: #ECEFEC; 
     border-radius: 11px;
@@ -40,7 +43,10 @@
 }
 
 .mixlistInfo,
-.cinematchInfo {
+.cinematchInfo,
+.portfolioInfo,
+.kitchenInfo,
+.codemodeInfo {
     display: flex;
     padding: 30px;
     align-items: center;
@@ -58,9 +64,17 @@
 .MT {
     text-shadow: 1px 1px 3px rgba(178, 120, 216, 0.753);
 }
-
 .CM {
     text-shadow: 1px 1px 3px rgba(120, 178, 216, 0.753);
+}
+.KV {
+    text-shadow: 1px 1px 3px rgb(112, 114, 237);
+}
+.CO {
+    text-shadow: 1px 1px 3px rgba(214, 66, 221, 0.759);
+}
+.PW {
+    text-shadow: 1px 1px 3px rgba(221, 66, 87, 0.759);
 }
 
 .projectName img {
@@ -202,7 +216,10 @@
 }
 
 .mixlistInfo,
-.cinematchInfo {
+.cinematchInfo,
+.portfolioInfo,
+.kitchenInfo,
+.codemodeInfo {
     display: flex;
     flex-direction: column;
     align-items: center;

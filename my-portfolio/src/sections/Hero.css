@@ -2,6 +2,7 @@
 
 .heroSection {
     max-width: 1200px;
+    width: 95%;
     color: var(--color-text-accent);
 
     display: flex;
@@ -53,7 +54,7 @@ h2 {
     font-size: 1.1rem;
     font-family: 'Young Serif';
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(28, 2, 29);
 
     transition: all 0.25s ease;
 }

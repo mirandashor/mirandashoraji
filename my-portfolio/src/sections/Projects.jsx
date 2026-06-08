@@ -3,6 +3,9 @@ import './Projects.css';
 
 import CineMatchLogo from "../assets/CineMatchLogo.png";
 import mixlistLogo from "../assets/mixlistLogo.png";
+import kitchenLogo from "../assets/kitchenLogo.png";
+import codeModeLogo from "../assets/codeModeLogo.png";
+import portfolioLogo from "../assets/portfolioLogo.png";
 
 //reusable carousel logic
 const Carousel = ({ images} ) => {
@@ -52,6 +55,7 @@ const Carousel = ({ images} ) => {
         </div>
     );
 }
+
 
 const Projects = () => {
     // because of GitHub Actions, root (baseURL) is now 'mirandashoraji' and not 'root'
@@ -108,10 +112,37 @@ const Projects = () => {
         img("/cinematch/cinematch6.png"),
     ];
 
+    const codemodeImages = [
+        img("/codemode/codemode1.png"),
+        img("/codemode/codemode2.png"),
+        img("/codemode/codemode3.png"),
+        img("/codemode/codemode5.png"),
+        img("/codemode/codemode6.png"),
+        img("/codemode/codemode7.png"),
+        img("/codemode/codemode8.png"),
+    ];
+
+    const kitchenImages = [
+        img("/kitchen/kitchen1.png"),
+        img("/kitchen/kitchen2.png"),
+        img("/kitchen/kitchen3.png"),
+        img("/kitchen/kitchen4.png"),
+        img("/kitchen/kitchen5.png"),
+        img("/kitchen/kitchen6.png"),
+        img("/kitchen/kitchen7.png"),
+    ];
+
+    const portfolioImages = [
+        img("/portfolio/portfolio2.png"),
+        img("/portfolio/portfolio3.png"),
+        img("/portfolio/portfolio4.png"),
+        img("/portfolio/portfolio5.png"),
+    ];
+
     return (
         <section id="Projects">
             <div>
-                <h2>Projects 🖳</h2>
+                <h2>Projects ✰</h2>
             </div>
 
             <div className="allProjects">
@@ -182,13 +213,12 @@ const Projects = () => {
                                 
                                 <Carousel images={cinematchImages} />
 
-
                                 <div className="desc">
                                     <p>A RESTful API that generates ranked movie recommendations based on user input, returning the top 10 results to improve movie discovery and selection.
                                     Built from an AWS Lambda pipeline that aggregates data from multiple movie API endpoints and processes candidate results for ranking, with
                                     a Gemini-powered n8n workflow to refine user input, and improve recommendation relevance.
                                     Added additional features using movie and weather API endpoints to enhance overall user experience.
-                                    Rhe application was deployed as a serverless system on AWS with automated CI/CD pipelines for infrastructure and deployment.
+                                    The application was deployed as a serverless system on AWS with automated CI/CD pipelines for infrastructure and deployment.
                                     </p>
                                     <div className="techStack">
                                         <span className="tech">JavaScript</span>
@@ -206,7 +236,95 @@ const Projects = () => {
                             
                         </div>
                     </div>
-                        
+
+
+                    <div className="projectItem">
+                        <div className="projectName">
+                            <img src={portfolioLogo}></img>
+                            <span className="PW">Portfolio Website</span>
+                        </div>
+
+                        <div className="portfolioBox">
+                            <div className="portfolioInfo">
+
+                                <Carousel images={portfolioImages} />
+
+                                <div className="desc">
+                                    <p>
+                                       A personal portfolio website to showcase my projects, technical skills,
+                                        and experience featuring a responsive layout and clean user interface 
+                                    </p>
+                                    <div className="techStack">
+                                        <span className="tech">JavaScript</span>
+                                        <span className="tech">CSS</span>
+                                        <span className="tech">React</span>
+                                        <span className="tech">Figma</span>
+                                        <span className="tech">Git</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="projectItem">
+                        <div className="projectName">
+                            <img src={kitchenLogo}></img>
+                            <span className="KV">Kitchen Design Application</span>
+                        </div>
+
+                        <div className="kitchenBox">
+                            <div className="kitchenInfo">
+
+                                <Carousel images={kitchenImages} />
+
+                                <div className="desc">
+                                    <p>
+                                        An interactive application that helps users make confident decisions during kitchen renovation and design
+                                        by allowing them to explore and customze three present kitchen layouts along with a range of appliances and design options in real time.
+                                    </p>
+                                    <div className="techStack">
+                                        <span className="tech">JavaFX</span>
+                                        <span className="tech">CSS</span>
+                                        <span className="tech">Figma</span>
+                                        <span className="tech">Canva</span>
+                                        <span className="tech">Git</span>
+                                        <span className="tech">Scene Builder</span>
+                                        <span className="tech">Maven</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="projectItem">
+                        <div className="projectName">
+                            <img src={codeModeLogo}></img>
+                            <span className="CO">JavaScript Learning Applicaiton</span>
+                        </div>
+
+                        <div className="codemodeBox">
+                            <div className="codemodeInfo">
+
+                                <Carousel images={codemodeImages}/>
+
+                                <div className="desc">
+                                    <p>
+                                        Interactive application that teaches JavaScript through a structured series of multiple-choice and fill-in-the-blank 
+                                        questions, featuring three main ideas and three levels of difficulty for each, helping users build an understanding of the core functionalities.
+                                    </p>
+                                    <div className="techStack">
+                                        <span className="tech">JavaFX</span>
+                                        <span className="tech">Java</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                        
                 </div>
             </div>
             
