@@ -94,7 +94,7 @@
     font-size: 13px;
 }
 
-/* .carousel {
+.carousel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,14 +186,7 @@
     border: none;
     border-radius: 50%;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
-} */
-
-/* .dot:hover.blue {
-    background-color: rgb(175, 191, 235);
-}
-.dotActive.blue {
-    background-color: rgb(134, 162, 234);
-} */
+} 
 
 @media (max-width: 1100px) {
 .projectItem {
