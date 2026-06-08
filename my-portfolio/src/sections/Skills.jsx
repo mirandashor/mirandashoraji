@@ -8,7 +8,7 @@ const Skills = () => {
             <div className="skillsLeft">
                 <h2>Skills ⌨︎</h2>
                 <p>Gained from developing projects and accumulated experience</p>
-                <p>Constantly growing and broadening my knowledge for new opportunities.</p>
+                <p>Constantly growing and broadening my knowledge for new opportunities</p>
             </div>
             <div className="skillsBox">
                 <div className="skill">
