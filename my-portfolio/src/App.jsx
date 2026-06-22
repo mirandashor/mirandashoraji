@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <main>
             <Hero />
-            <div className="divider" />
+            <div className="heroDivider" />
             <About />
             <div className="divider" />
             <Skills />

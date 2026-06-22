@@ -43,15 +43,19 @@ const Carousel = ({ images} ) => {
                 <div className="carouselMain">
 
                     <button className="backBtn" onClick={prevBtn}>❮</button>
-                    <img src={images[imageIndex]} />
+                    <div className="carouselTrack"
+                    style={{ transform: `translateX(-${imageIndex * 100}%)`}}>
+                        {images.map((img) => (
+                            <img src={img} />
+                        ))}
+                    </div>
                     <button className="nextBtn" onClick={nextBtn}>❯</button>
 
                 </div>
-
+            </div>
                 <div className="carouselDots">
                     {imageDots()}
                 </div>
-            </div>
         </div>
     );
 }
@@ -275,8 +279,9 @@ const Projects = () => {
 
                         <div className="kitchenBox">
                             <div className="kitchenInfo">
-
+                                <div className="kitchenViewport">
                                 <Carousel images={kitchenImages} />
+                                </div>
 
                                 <div className="desc">
                                     <p>
@@ -307,7 +312,9 @@ const Projects = () => {
                         <div className="codemodeBox">
                             <div className="codemodeInfo">
 
+                                <div className="codemodeViewport">
                                 <Carousel images={codemodeImages}/>
+                                </div>
 
                                 <div className="desc">
                                     <p>

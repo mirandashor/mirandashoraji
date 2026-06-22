@@ -74,6 +74,7 @@ h2 {
     transform: translateY(-1.4px) scale(1.01);
     box-shadow: -2px 3px 8px rgba(184, 101, 80, 0.637);
     background: var(--color-hero-gradient1-hover);
+    color: var(--color-text-accent);
 }
 
 .heroButtons > .button:nth-child(2):hover {
@@ -81,6 +82,7 @@ h2 {
     transform: translateY(-1.4px) scale(1.006);
     box-shadow: 2px 3px 8px rgba(184, 101, 80, 0.637);
     background: var(--color-hero-gradient2-hover);
+    color: var(--color-text-accent);
 }
 
 /* .waveup,
