@@ -36,7 +36,7 @@
     display: flex;
     background-color: #ECEFEC; 
     border-radius: 11px;
-    box-shadow: 0 1px 6px rgba(184, 101, 80, 0.637);
+    box-shadow: 0 1px 6px rgba(170, 94, 75, 0.637);
     align-items: center;
     width: 100%;
 }
@@ -82,6 +82,7 @@
 
     width: 130px;
     object-fit: contain;
+    box-shadow: 1px 1px 8px rgba(74, 5, 55, 0.507);
 }
 
 .desc {

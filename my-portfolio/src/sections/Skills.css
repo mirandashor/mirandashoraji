@@ -1,6 +1,6 @@
 .skillsSection {
     background: var(--color-box-gradient2);
-    border: 3px solid var(--color-text-accent);
+    /* border: 3px solid var(--color-text-accent); */
     border-radius: 11px;
 
     display: flex;
@@ -11,7 +11,7 @@
     width: 95%;
     margin: 0 auto;
 
-    box-shadow: 1px 1px 20px rgba(51, 3, 37, 0.507);
+    box-shadow: 1px 1px 20px rgba(74, 5, 55, 0.507);
 
     gap: 12px;
 }

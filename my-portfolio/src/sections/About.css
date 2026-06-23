@@ -5,7 +5,7 @@
 
 .main {
     background: var(--color-box-gradient1);
-    border: 3px solid var(--color-text-accent);
+    /* border: 3px solid var(--color-text-accent); */
     border-radius: 11px;
 
     max-width: 1200px;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 20px rgba(51, 3, 37, 0.507);
+    box-shadow: 1px 1px 20px rgba(74, 5, 55, 0.507);
 }
 
 .me {
@@ -69,18 +69,18 @@
 
 .cards > div:nth-child(1),
 .cards > div:nth-child(2) {
-    border: 1px solid var(--color-text-accent);
+    /* border: 1px solid var(--color-text-accent); */
     border-radius: 11px 65px;
     background: var(--color-box-static);
-    box-shadow: 0 3px 7px rgba(51, 3, 37, 0.507);
+    box-shadow: 0 3px 7px rgba(74, 5, 55, 0.507);
 }
 
 .cards > div:nth-child(3),
 .cards > div:nth-child(4) {
-    border: 1px solid var(--color-text-accent);
+    /* border: 1px solid var(--color-text-accent); */
     border-radius: 65px 11px;
     background: var(--color-box-static);
-    box-shadow: 0 3px 7px rgba(51, 3, 37, 0.507);
+    box-shadow: 0 3px 7px rgba(74, 5, 55, 0.507);
 }
 
 .cards div {
