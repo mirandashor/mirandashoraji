@@ -32,16 +32,9 @@
 .me img {
     width: 60%;
     height: auto;
-        display: block;
-    margin-bottom: 10px;
+    display: block;
     box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);
 }
-    /* width: 60%;
-    max-width: 180px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    box-shadow: 0 0 6px rgba(130, 49, 115, 0.637); */
 
 .paragraph p {
     max-width: 600px;
@@ -155,6 +148,6 @@
 
         margin: 0;
         padding: 12px;
-        font-size: .7rem;
+        font-size: clamp(0.7rem, 3vw, 1rem);
     }
 }
