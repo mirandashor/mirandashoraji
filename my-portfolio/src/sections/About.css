@@ -150,4 +150,11 @@
         padding: 12px;
         font-size: clamp(0.7rem, 3vw, 1rem);
     }
+
+    .me img {
+        width: 45%;
+        height: auto;
+        display: block;
+        box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);
+    }
 }
