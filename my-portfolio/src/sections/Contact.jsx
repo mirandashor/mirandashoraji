@@ -38,7 +38,7 @@ const Contact = () => {
 
                             <div className="linkButton">
                                 <button onClick={()=> navigator.clipboard.writeText("https://www.linkedin.com/in/mirandashoraji/")}>
-                                    https://www.linkedin.com/in/mirandashoraji/
+                                    linkedin.com/in/mirandashoraji/
 
                                 </button>
                                 <Icon href="https://www.linkedin.com/in/mirandashoraji/" img={externalLink} alt="ExternalLink"></Icon>

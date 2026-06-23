@@ -106,13 +106,20 @@
 }
 
 @media (max-width: 1100px) {
-    #Contact {
-    width: 95%;
-    max-width: 400px;
-    }
-
     .contactBoxes {
-    width: 95%;
-    max-width: 400px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 10px !important;
+        
+    }
+    .contactType1,
+    .contactType2 {
+        padding: 45px;
+        width: clamp(280px, 40vw, 350px);
+        
+    }
+    .linkButton {
+        width: clamp(320px, 40vw, 350px);
+         padding: 10px !important;
     }
 }
