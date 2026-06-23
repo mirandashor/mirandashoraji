@@ -39,15 +39,15 @@
 .paragraph p {
     max-width: 600px;
 
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.15rem);
     line-height: 1.5;
-    padding: 10px;
+    padding: 15px;
     margin-left: 20px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( 180px, 1fr));
     gap: 10px;
 
     max-width: 1200px;
@@ -152,7 +152,7 @@
     }
 
     .me img {
-        width: 45%;
+        width: 30%;
         height: auto;
         display: block;
         box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);

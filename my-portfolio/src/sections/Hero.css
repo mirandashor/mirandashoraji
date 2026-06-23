@@ -87,17 +87,29 @@ h2 {
 
 @media (max-width: 1100px) {
     .heroSection {
-        margin: 40px auto;
+        margin: 100px auto;
         max-width: 1000px;
         font-size: 1rem;
     }
 
     .font {
-    font-size: 2.6rem;
+        font-size: 2.6rem;
+        line-height: 1.5;
     }
 
     h1 {
         font-size: 2.1rem;
+        line-height: 1.5;
+    }
+
+    h1.font {
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    h2 {
+        line-height: 1.5;
+        margin: 5px;
     }
 
     .heroName {
@@ -106,6 +118,22 @@ h2 {
 
     .heroButtons .button {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 864px) {
+    .heroSection {
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        padding: 6px;
+    }
+
+    h1.font {
+        padding: 0px;
+        font-size: 2.1rem;
     }
 }
 

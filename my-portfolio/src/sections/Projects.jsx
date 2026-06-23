@@ -65,8 +65,8 @@ const Projects = () => {
     // because of GitHub Actions, root (baseURL) is now 'mirandashoraji' and not 'root'
     const img = (path) => `${import.meta.env.BASE_URL}${path}`;
 
-    // mixlist images
-    const[mixlistIndex, setMixlistIndex] = useState(0);
+    // // mixlist images
+    // const[mixlistIndex, setMixlistIndex] = useState(0);
     const mixlistImages = [
         img("/mixlist/mixlist1.png"),
         img("/mixlist/mixlist2.png"),
@@ -77,34 +77,34 @@ const Projects = () => {
         img("/mixlist/mixlist7.png"),
         img("/mixlist/mixlist8.png"),
     ];
-    //mixlist carousel logic
-    const nextImage = () => {
-        //update the image being shown to show next imaage (+1)
-        if (mixlistIndex < mixlistImages.length - 1) {
-            setMixlistIndex(mixlistIndex + 1)
-        }
-        else {
-            setMixlistIndex(0);
-        }
-    }
-    //prev button wraps if at 0 index or goes back one if not
-    const prevImage = () => {
-        if (mixlistIndex > 0) {
-            setMixlistIndex(mixlistIndex - 1);
-        } else {
-            setMixlistIndex(mixlistImages.length -1);
-        }
-    }
-    const carouselDots = () => {
-        return mixlistImages.map((_, i) =>{
-                return (
-                    <button className={i === mixlistIndex ? "dotActive" : "dot"} 
-                    onClick={() => setMixlistIndex(i)}>
+    // //mixlist carousel logic
+    // const nextImage = () => {
+    //     //update the image being shown to show next imaage (+1)
+    //     if (mixlistIndex < mixlistImages.length - 1) {
+    //         setMixlistIndex(mixlistIndex + 1)
+    //     }
+    //     else {
+    //         setMixlistIndex(0);
+    //     }
+    // }
+    // //prev button wraps if at 0 index or goes back one if not
+    // const prevImage = () => {
+    //     if (mixlistIndex > 0) {
+    //         setMixlistIndex(mixlistIndex - 1);
+    //     } else {
+    //         setMixlistIndex(mixlistImages.length -1);
+    //     }
+    // }
+    // const carouselDots = () => {
+    //     return mixlistImages.map((_, i) =>{
+    //             return (
+    //                 <button className={i === mixlistIndex ? "dotActive" : "dot"} 
+    //                 onClick={() => setMixlistIndex(i)}>
                         
-                    </button>
-                );
-            });
-    };
+    //                 </button>
+    //             );
+    //         });
+    // };
 
     //cinematch images
     const cinematchImages = [
@@ -161,21 +161,24 @@ const Projects = () => {
                         {/* carousel section */}
                         <div className="mixlistBox">
                             <div className="mixlistInfo">
-                                <div className="carousel">
+
+                                <Carousel images={mixlistImages} />
+
+                                {/* <div className="carousel">
                                     <div className="carouselViewport">
                                         <div className="carouselMain">
 
                                         <button className="backBtn" onClick={prevImage}>❮</button>
                                         {/* display first image in the array index */}
-                                        <img src={mixlistImages[mixlistIndex]}></img>
+                                        {/* <img src={mixlistImages[mixlistIndex]}></img>
                                         {/* set button to execute the nextImage function on click */}
-                                        <button className="nextBtn" onClick={nextImage}>❯</button>
+                                        {/* <button className="nextBtn" onClick={nextImage}>❯</button>
                                         </div>
                                         <div className="carouselDots">
                                             {carouselDots()}
                                         </div>
                                     </div>
-                                </div>
+                                </div>  */}
 
                                 {/* description section */}
                                 <div className="desc">
