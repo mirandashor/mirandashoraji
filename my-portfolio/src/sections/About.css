@@ -32,9 +32,16 @@
 .me img {
     width: 60%;
     height: auto;
+        display: block;
     margin-bottom: 10px;
     box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);
 }
+    /* width: 60%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 0 0 6px rgba(130, 49, 115, 0.637); */
 
 .paragraph p {
     max-width: 600px;
@@ -118,7 +125,7 @@
 
     .cards > div:nth-child(1),
     .cards > div:nth-child(3) {
-        border: 1px solid var(--color-text-accent);
+        /* border: 1px solid var(--color-text-accent); */
         border-radius: 11px 65px;
         background: var(--color-box-static);
         box-shadow: 0 3px 7px rgba(51, 3, 37, 0.507);
@@ -126,13 +133,28 @@
 
     .cards > div:nth-child(2),
     .cards > div:nth-child(4) {
-        border: 1px solid var(--color-text-accent);
+        /* border: 1px solid var(--color-text-accent); */
         border-radius: 65px 11px;
         background: var(--color-box-static);
         box-shadow: 0 3px 7px rgba(51, 3, 37, 0.507);
     }
 
     .cards {
-            grid-template-columns: repeat(2, minmax( 120px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+
+    .cards p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--color-text-accent);
+
+        margin: 0;
+        padding: 12px;
+        font-size: .7rem;
     }
 }
