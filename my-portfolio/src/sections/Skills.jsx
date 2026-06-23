@@ -7,8 +7,8 @@ const Skills = () => {
             <div className="skillsSection">
             <div className="skillsLeft">
                 <h2>Skills ⌨︎</h2>
-                <p>Gained from developing projects and accumulated experience</p>
-                <p>Constantly growing and broadening my knowledge for new opportunities</p>
+                <p>Skills developed through academic projects and hands-on experience</p>
+                <p>Constantly expanding my knowledge in software development, web technologies, and problem-solving</p>
             </div>
             <div className="skillsBox">
                 <div className="skill">

@@ -258,8 +258,9 @@ const Projects = () => {
 
                                 <div className="desc">
                                     <p>
-                                       A personal portfolio website to showcase my projects, technical skills,
-                                        and experience featuring a responsive layout and clean user interface 
+                                       A personal portfolio website designed to showcase my projects, technical skills,
+                                        and experience. Features a responsive layout, smooth navigation, interactive project displays,
+                                        and a clean, modern, easy to view user interface optimized for both desktop and mobile devices.
                                     </p>
                                     <div className="techStack">
                                         <span className="tech">JavaScript</span>
