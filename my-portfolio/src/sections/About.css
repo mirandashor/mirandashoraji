@@ -24,19 +24,17 @@
     align-items: center;
     text-decoration: underline;
     font-family: 'Lemon';
-    padding: 10px;
 
     color: var(--color-text-accent);
 }
 
 .me img {
-    width: 30%;
+    width: 32%;
     height: auto;
     display: block;
 
     object-fit: contain;
     flex-shrink: 0;
-    align-self: center;
     box-shadow: 0 0 6px rgba(130, 49, 115, 0.637);
 }
 
@@ -116,7 +114,7 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-    
+
     .me img {
         width: 30%;
         height: auto;
