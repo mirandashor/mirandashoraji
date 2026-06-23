@@ -103,7 +103,12 @@
         width: 30px;
         height: auto;
     }
+}
 
+@media (max-width: 864px) {
+    .skill {
+        font-size: 10px;
+    }
 }
 
 
