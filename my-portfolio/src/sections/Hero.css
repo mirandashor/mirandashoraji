@@ -87,6 +87,7 @@ h2 {
 
 @media (max-width: 1100px) {
     .heroSection {
+        margin: 40px auto;
         max-width: 1000px;
         font-size: 1rem;
     }
