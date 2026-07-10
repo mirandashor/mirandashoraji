@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import ChatBubble from "./components/ChatBubble";
 import Icon from "./components/Icon";
 import flowerPattern from "./assets/flowerPattern.png";
 import "./App.css";
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <main>
             <Hero />
+            <ChatBubble />
             <div className="heroDivider" />
             <About />
             <div className="divider" />
