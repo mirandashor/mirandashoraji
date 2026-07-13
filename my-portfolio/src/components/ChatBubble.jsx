@@ -1,6 +1,7 @@
 import React from 'react';
 import './ChatBubble.css';
 import { useState } from 'react';
+import { MessageCircle } from 'lucide-react';
 //import usestate tool from react
 
 const ChatBubble = () => {
@@ -28,15 +29,14 @@ const ChatBubble = () => {
     return(
         <div className="chatBubble">
             {/*//when button is clicked, run togglePopup function*/}
-            <button className="ChatButton" onClick={togglePopup}>
-                Ask me questions!
+            <button className="ChatButton" onClick={togglePopup} title="Ask me questions!">
+                <MessageCircle size={32} />
             </button>
 
             {/*if isOpen is true, show the popup and its details.
             otherwise show nothing*/}
             {isOpen && (
                 <div className="popup">
-                    <button onClick={togglePopup}>X</button>
                     {/*map loops through each item in the array(question)*/}
                     {/*item=current question object, index=array number*/}
                     {qaData.map((item, index) => (

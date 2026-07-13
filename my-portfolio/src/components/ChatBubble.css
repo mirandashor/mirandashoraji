@@ -1,4 +1,67 @@
-/*.ChatButton {*/
-/*    border: none;*/
-/*    background-color: #812E5B;*/
-/*}*/
+.chatBubble {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.ChatButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background-color: #812E5B;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ChatButton:hover {
+    background-color: #a73d75;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.ChatButton:active {
+    transform: scale(0.98);
+}
+
+.popup {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    padding: 1.5rem;
+    z-index: 1001;
+}
+
+.popup button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.popup button:hover {
+    background-color: #812E5B;
+    color: white;
+    border-color: #812E5B;
+}
+
+.popup button:last-child {
+    margin-bottom: 0;
+}
