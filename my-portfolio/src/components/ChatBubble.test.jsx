@@ -51,7 +51,7 @@ describe('ChatBubble Component', () => {
 
     // The answer should be displayed
     expect(screen.getByText('JavaScript, HTML, CSS, TypeScript, C++')).toBeInTheDocument();
-    expect(screen.getByText('Back')).toBeInTheDocument();
+    expect(screen.getByText('← Back')).toBeInTheDocument();
   });
 
   it('should return to questions list when Back button is clicked', () => {
@@ -66,7 +66,7 @@ describe('ChatBubble Component', () => {
     fireEvent.click(questionButton);
 
     // Click the Back button
-    const backButton = screen.getByText('Back');
+    const backButton = screen.getByText('← Back');
     fireEvent.click(backButton);
 
     // Questions should be visible again
@@ -86,7 +86,7 @@ describe('ChatBubble Component', () => {
     expect(screen.getByText('Yes! Amazon Web Services and Google Cloud Platform')).toBeInTheDocument();
 
     // Go back
-    fireEvent.click(screen.getByText('Back'));
+    fireEvent.click(screen.getByText('← Back'));
 
     // Test third question
     const thirdQuestion = screen.getByText('Where can you contact me?');
