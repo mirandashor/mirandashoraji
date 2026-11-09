@@ -153,7 +153,7 @@ const Projects = () => {
 
                 <div className="projectCards">
                     {/* mixlist section */}
-                    <div className="projectItem">
+                    <div id="project-mixlist" className="projectItem">
                         <div className="projectName">
                             <img src={mixlistLogo}></img>
                             <span className="MT">Collaborative Playlist Generator</span>
@@ -209,7 +209,7 @@ const Projects = () => {
 
 
                     {/* cinematch section */}
-                    <div className="projectItem">
+                    <div id="project-cinematch" className="projectItem">
                         <div className="projectName">
                             <img src={CineMatchLogo}></img>
                             <span className="CM">Movie Recommendation Generator</span>
@@ -245,7 +245,7 @@ const Projects = () => {
                     </div>
 
 
-                    <div className="projectItem">
+                    <div id="project-portfolio" className="projectItem">
                         <div className="projectName">
                             <img src={portfolioLogo}></img>
                             <span className="PW">Portfolio Website</span>
