@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Young+Serif:wght@300;400;500;600&display=swap'); 
 
 .heroSection {
+    position: relative;
     max-width: 1200px;
     width: 95%;
     color: var(--color-text-accent);
@@ -11,7 +12,152 @@
     text-align: left;
 
     font-size: 1.5rem;
-    margin: 170px auto 100px;
+    margin: 120px auto 80px;
+    padding: 20px 22px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.heroSection::before,
+.heroSection::after,
+.heroSection .star,
+.heroSection .starTwo,
+.heroSection .starThree,
+.heroSection .starFour,
+.heroSection .starFive,
+.heroSection .starSix,
+.heroSection .starSeven {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: var(--star-opacity, 0.9);
+    animation: starFall var(--star-duration, 7s) linear infinite;
+}
+
+.heroSection::before {
+    content: "✰";
+    top: 14%;
+    right: 12%;
+    font-size: 2.5rem;
+    color: rgba(98, 34, 69, 0.72);
+    transform: rotate(12deg);
+    --star-opacity: 1;
+}
+
+.heroSection::after {
+    content: "✰";
+    bottom: 16%;
+    right: 8%;
+    font-size: 2.1rem;
+    color: rgba(194, 103, 74, 0.8);
+    transform: rotate(-8deg);
+    --star-opacity: 1;
+}
+
+.heroSection .star,
+.heroSection .starTwo,
+.heroSection .starThree,
+.heroSection .starFour,
+.heroSection .starFive,
+.heroSection .starSix,
+.heroSection .starSeven {
+    display: block;
+    line-height: 1;
+    font-size: 1.5rem;
+    color: rgba(98, 34, 69, 0.62);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.28);
+}
+
+.heroSection .star {
+    top: 28%;
+    right: 25%;
+    transform: rotate(18deg);
+    --star-opacity: 1;
+    --star-duration: 6s;
+    animation-delay: 0s;
+}
+
+.heroSection .starTwo {
+    top: 48%;
+    right: 18%;
+    font-size: 1.35rem;
+    color: rgba(98, 34, 69, 0.52);
+    --star-opacity: 0.92;
+    --star-duration: 7s;
+    animation-delay: 0.9s;
+}
+
+.heroSection .starThree {
+    top: 38%;
+    right: 10%;
+    font-size: 1.25rem;
+    color: rgba(194, 103, 74, 0.82);
+    --star-opacity: 1;
+    --star-duration: 7.5s;
+    animation-delay: 1.8s;
+}
+
+.heroSection .starFour {
+    bottom: 26%;
+    right: 22%;
+    font-size: 1.2rem;
+    color: rgba(98, 34, 69, 0.52);
+    --star-opacity: 0.9;
+    --star-duration: 7.2s;
+    animation-delay: 2.8s;
+}
+
+.heroSection .starFive {
+    bottom: 18%;
+    right: 28%;
+    font-size: 1.15rem;
+    color: rgba(194, 103, 74, 0.8);
+    --star-opacity: 0.95;
+    --star-duration: 6.8s;
+    animation-delay: 4.2s;
+}
+
+.heroSection .starSix {
+    top: 25%;
+    left: 18%;
+    font-size: 1.2rem;
+    color: rgba(194, 103, 74, 0.75);
+    --star-opacity: 0.9;
+    --star-duration: 8s;
+    animation-delay: 3.3s;
+}
+
+.heroSection .starSeven {
+    top: 58%;
+    left: 12%;
+    font-size: 1.15rem;
+    color: rgba(98, 34, 69, 0.45);
+    --star-opacity: 0.85;
+    --star-duration: 8.5s;
+    animation-delay: 5.4s;
+}
+
+@keyframes starFall {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 0.16;
+    }
+    12% {
+        opacity: var(--star-opacity);
+    }
+    70% {
+        opacity: var(--star-opacity);
+    }
+    100% {
+        transform: translate3d(30px, 110px, 0) rotate(18deg);
+        opacity: 0;
+    }
+}
+
+.heroSection > * {
+    position: relative;
+    z-index: 1;
 }
 
 .font {

@@ -12,6 +12,7 @@ const ChatBubble = () => {
     //question and answer are labels, the quotes are values, the {} are objects
     const qaData =[
         { question: "What languages have I worked with?", answer: "JavaScript, HTML, CSS, TypeScript, C++", showLanguages: true },
+        { question: "What tools and frameworks have I used?", answer: "Frontend & UI\nReact, Vite, HTML, CSS, TypeScript, Figma\n\nDevelopment Tools\nVS Code, GitHub, Git, Postman\n\nAI & Productivity\nGitHub Copilot, ChatGPT, Claude\n\nCloud & APIs\nAWS, Google Cloud Platform, REST APIs, n8n" },
         { question: "Have I worked with cloud services?", answer: "Yes! Amazon Web Services and Google Cloud Platform", showCloudDetails: true },
         { question: "What are my strengths?", answer: "I have a strong focus in front-end development, UI/UX design, project-based problem solving, and turning ideas into polished, user-friendly experiences. I work well in both group and solo environments, splitting and completing tasks efficiently. I am focused on continuously growing my skills and creating something bigger and better." },
         { question: "What are my next steps?", answer: "I’m building my skills in full-stack and AI-focused work from personal to professional settings, while continuing to grow as a developer through hands-on projects and real-world problem solving." },

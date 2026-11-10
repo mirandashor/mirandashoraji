@@ -165,6 +165,7 @@
     max-width: 70%;
     border-bottom-left-radius: 2px;
     border: 1px solid #b8b8b8;
+    white-space: pre-line;
 }
 
 .assistantMessage::after {

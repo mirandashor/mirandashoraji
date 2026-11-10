@@ -13,7 +13,8 @@
 
     box-shadow: 1px 1px 20px rgba(74, 5, 55, 0.507);
 
-    gap: 12px;
+    gap: 16px;
+    padding: 22px 22px 18px;
 }
 
 .skillsLeft {

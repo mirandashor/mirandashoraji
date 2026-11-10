@@ -5,6 +5,13 @@ const Hero = () => {
     return (
         <section id="Hero">   
             <div className="heroSection"> 
+                <span className="star">✰</span>
+                <span className="starTwo">✰</span>
+                <span className="starThree">✰</span>
+                <span className="starFour">✰</span>
+                <span className="starFive">✰</span>
+                <span className="starSix">✰</span>
+                <span className="starSeven">✰</span>
                 <div className="heroName">
                     <h1>Hi, I'm</h1>
                     <h1 className="font">Miranda Shoraji</h1>
